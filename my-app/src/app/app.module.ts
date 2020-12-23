@@ -7,6 +7,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
+import { ContantUsComponent } from './contant-us/contant-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -14,11 +18,18 @@ import { LoginComponent } from './login/login.component';
     TopBarComponent,
     HomeComponent,
     AboutUsComponent,
-    LoginComponent
+    LoginComponent,
+    ContantUsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
+    ],
+    exports: [
+      FormsModule,
+      ReactiveFormsModule
     ],
   providers: [],
   bootstrap: [AppComponent]
