@@ -9,6 +9,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
 import { LoginComponent } from './login/login.component';
 import { ContantUsComponent } from './contant-us/contant-us.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserComponent } from './user/user.component';
+import { UserlistComponent } from './userlist/userlist.component';
 
 
 
@@ -19,7 +21,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AboutUsComponent,
     LoginComponent,
-    ContantUsComponent
+    ContantUsComponent,
+    UserComponent,
+    UserlistComponent
   ],
   imports: [
     BrowserModule,

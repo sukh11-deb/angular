@@ -1,0 +1,14 @@
+<p>contant-us works!</p>
+
+<p>Value: {{serverName}}</p>
+
+    <label>Name: <input type="text" #newword (keyup)="addNewWord(newword.value)"></label>
+    
+ <form [formGroup]="contactusForm" (submit)="submituser()">
+     
+    FN:<input type="text" formControlName="firstname"> 
+    LN:<input type="text" formControlName="lastname"> 
+
+<input type="submit">
+
+</form>
